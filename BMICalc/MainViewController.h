@@ -11,6 +11,8 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
+- (BOOL) reloadUIFromSettings;
+
 - (IBAction)showInfo:(id)sender;
 
 - (IBAction)btnCalc:(id)sender;
@@ -19,6 +21,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblBMI;
 @property (weak, nonatomic) IBOutlet UITextField *txtHeight;
 @property (weak, nonatomic) IBOutlet UITextField *txtWeight;
+@property (weak, nonatomic) IBOutlet UILabel *lblHeightSI;
+@property (weak, nonatomic) IBOutlet UILabel *lblWeightSI;
+@property (weak, nonatomic) IBOutlet UITextField *txtHeightEE;
+@property (weak, nonatomic) IBOutlet UITextField *txtHeightEE2;
+@property (weak, nonatomic) IBOutlet UITextField *txtWeightEE;
+@property (weak, nonatomic) IBOutlet UILabel *lblHeightEE;
+@property (weak, nonatomic) IBOutlet UILabel *lblHeightEE2;
+@property (weak, nonatomic) IBOutlet UILabel *lblWeightEE;
 
 
 @end

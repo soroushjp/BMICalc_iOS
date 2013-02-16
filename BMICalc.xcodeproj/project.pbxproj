@@ -94,6 +94,8 @@
 		73D625CE16CE8DCC0084C149 /* BMICalc */ = {
 			isa = PBXGroup;
 			children = (
+				736637FE16D0165F0077D4EA /* UserDefaults.h */,
+				736637FF16D0165F0077D4EA /* UserDefaults.m */,
 				73D625D716CE8DCC0084C149 /* AppDelegate.h */,
 				73D625D816CE8DCC0084C149 /* AppDelegate.m */,
 				73D625E016CE8DCC0084C149 /* MainViewController.h */,
@@ -105,8 +107,6 @@
 				73D625CF16CE8DCC0084C149 /* Supporting Files */,
 				73417C7F16CF1C9C0021B06C /* BMI.h */,
 				73417C8016CF1C9C0021B06C /* BMI.m */,
-				736637FE16D0165F0077D4EA /* UserDefaults.h */,
-				736637FF16D0165F0077D4EA /* UserDefaults.m */,
 			);
 			path = BMICalc;
 			sourceTree = "<group>";
