@@ -18,6 +18,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //Set settings to those loaded from NSUserDefaults
+    NSString *unitOptionsStr[2] = {@"SI", @"EE"};
+    _unitOptions = [NSArray arrayWithObjects:unitOptionsStr count:2];
+    
+    NSString* units;
+    
+    UserDefaults *settings = [[UserDefaults alloc] init];
+    units = [settings retrieveFromUserDefaults:@"units"];
+    
+    if(units) {
+        [_settingUnits setSelectedSegmentIndex:[_unitOptions indexOfObject:units]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,6 +43,14 @@
 
 - (IBAction)done:(id)sender
 {
+    NSString *units;
+    
+    units = _unitOptions[[_settingUnits selectedSegmentIndex]];
+    
+    UserDefaults *settings = [[UserDefaults alloc] init];
+
+    [settings savetoUserDefaults:units asKey:@"units"];
+    
     [self.delegate flipsideViewControllerDidFinish:self];
 }
 

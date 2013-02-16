@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserDefaults.h"
 
 @class FlipsideViewController;
 
@@ -17,6 +18,8 @@
 @interface FlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *settingUnits;
+@property (strong, nonatomic) NSArray *unitOptions;
 
 - (IBAction)done:(id)sender;
 
