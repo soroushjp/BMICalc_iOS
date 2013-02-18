@@ -22,5 +22,6 @@
 @property (strong, nonatomic) NSArray *unitOptions;
 
 - (IBAction)done:(id)sender;
+- (IBAction)btnAboutClicked:(id)sender;
 
 @end
