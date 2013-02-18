@@ -10,6 +10,7 @@
 
 @interface UserDefaults : NSObject
 
+- (BOOL) setAppDefaults;
 - (NSString*)retrieveFromUserDefaults:(NSString*)myKey;
 - (BOOL)savetoUserDefaults:(NSString*)myVal asKey:(NSString*)myKey;
 

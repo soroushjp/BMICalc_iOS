@@ -10,6 +10,19 @@
 
 @implementation UserDefaults
 
+- (BOOL) setAppDefaults {
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if(defaults) {
+        NSDictionary *appDefaults = [[NSDictionary alloc] initWithObjectsAndKeys:@"SI", @"units", nil];
+        [defaults registerDefaults:appDefaults];
+        return YES;
+    }
+    
+    return NO;
+}
+
 - (NSString*)retrieveFromUserDefaults:(NSString*)myKey {
     
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];

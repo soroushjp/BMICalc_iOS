@@ -19,6 +19,11 @@
     self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
+    
+    UserDefaults *defaults = [[UserDefaults alloc] init];
+    [defaults setAppDefaults];
+    [self.mainViewController reloadUIFromSettings];
+    
     return YES;
 }
 

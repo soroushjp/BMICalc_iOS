@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		73417C8116CF1C9C0021B06C /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 73417C8016CF1C9C0021B06C /* BMI.m */; };
 		7366380016D0165F0077D4EA /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 736637FF16D0165F0077D4EA /* UserDefaults.m */; };
+		737C775B16D20E700099613C /* Weightlifting-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775A16D20E700099613C /* Weightlifting-128.png */; };
+		737C775D16D20E980099613C /* Weightlifting-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775C16D20E980099613C /* Weightlifting-114.png */; };
 		73D625C916CE8DCC0084C149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D625C816CE8DCC0084C149 /* UIKit.framework */; };
 		73D625CB16CE8DCC0084C149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D625CA16CE8DCC0084C149 /* Foundation.framework */; };
 		73D625CD16CE8DCC0084C149 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D625CC16CE8DCC0084C149 /* CoreGraphics.framework */; };
@@ -29,6 +31,8 @@
 		73417C8016CF1C9C0021B06C /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
 		736637FE16D0165F0077D4EA /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaults.h; path = ../UserDefaults.h; sourceTree = "<group>"; };
 		736637FF16D0165F0077D4EA /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefaults.m; path = ../UserDefaults.m; sourceTree = "<group>"; };
+		737C775A16D20E700099613C /* Weightlifting-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-128.png"; sourceTree = "<group>"; };
+		737C775C16D20E980099613C /* Weightlifting-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-114.png"; sourceTree = "<group>"; };
 		73D625C516CE8DCC0084C149 /* BMICalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D625C816CE8DCC0084C149 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		73D625CA16CE8DCC0084C149 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +71,8 @@
 		73D625BC16CE8DCC0084C149 = {
 			isa = PBXGroup;
 			children = (
+				737C775C16D20E980099613C /* Weightlifting-114.png */,
+				737C775A16D20E700099613C /* Weightlifting-128.png */,
 				73D625CE16CE8DCC0084C149 /* BMICalc */,
 				73D625C716CE8DCC0084C149 /* Frameworks */,
 				73D625C616CE8DCC0084C149 /* Products */,
@@ -182,6 +188,8 @@
 				73D625DF16CE8DCC0084C149 /* Default-568h@2x.png in Resources */,
 				73D625E816CE8DCC0084C149 /* MainViewController.xib in Resources */,
 				73D625EB16CE8DCC0084C149 /* FlipsideViewController.xib in Resources */,
+				737C775B16D20E700099613C /* Weightlifting-128.png in Resources */,
+				737C775D16D20E980099613C /* Weightlifting-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
