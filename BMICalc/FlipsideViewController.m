@@ -56,13 +56,7 @@
 
 - (IBAction)btnAboutClicked:(id)sender {
     
-    UIAlertView *aboutMsg = [[UIAlertView alloc] initWithTitle:@"About BMICalc" message:@"Developed by Soroush Pour\nTested by Tom Boyle\nTested by Fabio Berger\n\nThis app is Open Source. Find the code at:\n https://github.com/soroushjp/bmicalc_ios" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    
-//    for (UIView *view in aboutMsg.subviews) {
-//        if([[view class] isSubclassOfClass:[UILabel class]]) {
-//            ((UILabel*)view).textAlignment = UITextAlignmentLeft;
-//        }
-//    }
+    UIAlertView *aboutMsg = [[UIAlertView alloc] initWithTitle:@"About BMICalc" message:@"Developed by Soroush Pour\nTested by Tom Boyle\nTested by Fabio Berger\n\n\nThis app is 100% Open Source.\n\nFind the code at:\n github.com/soroushjp/bmicalc_ios" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     
     [aboutMsg show];
     
