@@ -31,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblWeightEE;
 @property (weak, nonatomic) IBOutlet UILabel *lblBMIDesc;
 @property (weak, nonatomic) IBOutlet UILabel *lblBMIRange;
+@property (weak, nonatomic) IBOutlet UILabel *lblError;
 
 
 @end
