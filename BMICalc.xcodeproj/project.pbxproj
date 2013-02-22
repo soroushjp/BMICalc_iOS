@@ -12,6 +12,8 @@
 		73417C8116CF1C9C0021B06C /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 73417C8016CF1C9C0021B06C /* BMI.m */; };
 		7366380016D0165F0077D4EA /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 736637FF16D0165F0077D4EA /* UserDefaults.m */; };
 		73674A2416D283AF003CE77E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 73674A2316D283AF003CE77E /* README.md */; };
+		737C146A16D52D5F000EF369 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C146916D52D5F000EF369 /* Icon.png */; };
+		737C146C16D52D6A000EF369 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C146B16D52D6A000EF369 /* Icon@2x.png */; };
 		737C775B16D20E700099613C /* Weightlifting-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775A16D20E700099613C /* Weightlifting-128.png */; };
 		737C775D16D20E980099613C /* Weightlifting-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 737C775C16D20E980099613C /* Weightlifting-114.png */; };
 		73D625C916CE8DCC0084C149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D625C816CE8DCC0084C149 /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 		736637FE16D0165F0077D4EA /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaults.h; path = ../UserDefaults.h; sourceTree = "<group>"; };
 		736637FF16D0165F0077D4EA /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefaults.m; path = ../UserDefaults.m; sourceTree = "<group>"; };
 		73674A2316D283AF003CE77E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		737C146916D52D5F000EF369 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		737C146B16D52D6A000EF369 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		737C775A16D20E700099613C /* Weightlifting-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-128.png"; sourceTree = "<group>"; };
 		737C775C16D20E980099613C /* Weightlifting-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weightlifting-114.png"; sourceTree = "<group>"; };
 		73D625C516CE8DCC0084C149 /* BMICalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 		73D625BC16CE8DCC0084C149 = {
 			isa = PBXGroup;
 			children = (
+				737C146B16D52D6A000EF369 /* Icon@2x.png */,
+				737C146916D52D5F000EF369 /* Icon.png */,
 				73131B1516D2CCC100B229DA /* Default@2x.png */,
 				73131B1316D2CBF900B229DA /* Default.png */,
 				73674A2316D283AF003CE77E /* README.md */,
@@ -202,6 +208,8 @@
 				73674A2416D283AF003CE77E /* README.md in Resources */,
 				73131B1416D2CBF900B229DA /* Default.png in Resources */,
 				73131B1616D2CCC100B229DA /* Default@2x.png in Resources */,
+				737C146A16D52D5F000EF369 /* Icon.png in Resources */,
+				737C146C16D52D6A000EF369 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    [_lblBMI setHidden:YES];
+    [_lblBMIDesc setHidden:YES];
+    [_lblBMIRange setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,8 +93,18 @@
     
     BMI *BMIObj = [[BMI alloc] init];
     [BMIObj setUnits: units];    
-    float BMIVal = [BMIObj getBMIfromHeight:height andWeight:weight];
-    
+    float BMIVal = [BMIObj getBMIFromHeight:height andWeight:weight];
+    [_lblBMI setHidden: NO];
+
+    if(BMIVal != 0 && !isnan(BMIVal) ) {
+        NSString *BMIRange = [BMIObj getRangeFromBMI:BMIVal];
+        UIColor *BMIColor = [BMIObj getColorFromRange:BMIRange];
+        [_lblBMIDesc setHidden:NO];
+        [_lblBMIRange setText:BMIRange];
+        [_lblBMIRange setHidden:NO];
+        [_lblBMIRange setTextColor:BMIColor];
+    }
+
     [_lblBMI setText:[NSString stringWithFormat:@"%.2f",BMIVal]];
 }
 

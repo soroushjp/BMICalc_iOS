@@ -29,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblHeightEE;
 @property (weak, nonatomic) IBOutlet UILabel *lblHeightEE2;
 @property (weak, nonatomic) IBOutlet UILabel *lblWeightEE;
+@property (weak, nonatomic) IBOutlet UILabel *lblBMIDesc;
+@property (weak, nonatomic) IBOutlet UILabel *lblBMIRange;
 
 
 @end

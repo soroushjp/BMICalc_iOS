@@ -20,7 +20,7 @@
     return self;
 }
 
-- (float) getBMIfromHeight:(float)height andWeight:(float) weight {
+- (float) getBMIFromHeight:(float)height andWeight:(float) weight {
     
     if([[self units] isEqual: @"SI"]) {
         return weight/(height * height);
@@ -32,6 +32,34 @@
     
     return 0;
 
+}
+
+- (NSString*) getRangeFromBMI:(float)BMI {
+
+    if(BMI<18) return @"Underweight";
+    if(BMI>=18 && BMI<25) return @"Normal";
+    if(BMI>=25 && BMI<30) return @"Overweight";
+    if(BMI>=30) return @"Obese";
+    
+    return @"Undefined";
+}
+
+- (UIColor*) getColorFromRange:(NSString*)range {
+    
+    if([range isEqual: @"Underweight"] || [range isEqual: @"Overweight"]) {
+        return [UIColor orangeColor];
+    }
+    
+    if([range isEqual: @"Obese"]) {
+        return [UIColor redColor];
+    }
+    
+    if([range isEqual: @"Normal"]) {
+        return [UIColor greenColor];
+    }
+    
+    return [UIColor greenColor];
+    
 }
 
 @end

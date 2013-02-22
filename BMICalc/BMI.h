@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) NSString* units;
 
-- (float)getBMIfromHeight:(float)height andWeight:(float) weight;
+- (float)getBMIFromHeight:(float)height andWeight:(float) weight;
+- (NSString*) getRangeFromBMI:(float)BMI;
+- (UIColor*) getColorFromRange:(NSString*)range;
 
 @end
